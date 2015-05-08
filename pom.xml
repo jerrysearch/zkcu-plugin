@@ -4,7 +4,7 @@
 
 	<groupId>com.jerry</groupId>
 	<artifactId>maven-zkcu-plugin</artifactId>
-	<version>0.1.1</version>
+	<version>1.1.0</version>
 	<packaging>maven-plugin</packaging>
 	<description>构建zkconfigutil的plugin</description>
 
@@ -43,7 +43,7 @@
 		<dependency>
 			<groupId>com.jerry</groupId>
 			<artifactId>zkconfigutil</artifactId>
-			<version>1.0.2</version>
+			<version>1.1.0</version>
 			<optional>false</optional>
 		</dependency>
 		<dependency>
