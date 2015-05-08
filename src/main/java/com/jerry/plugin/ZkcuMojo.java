@@ -19,7 +19,7 @@ import org.apache.maven.plugins.annotations.Parameter;
  */
 @Mojo(name = "zkcu", requiresDirectInvocation = true)
 public class ZkcuMojo extends AbstractMojo {
-	@Parameter(required = true)
+	@Parameter(required = true, property = "zk")
 	private String zk;
 
 	@Parameter(required = false)
@@ -28,7 +28,7 @@ public class ZkcuMojo extends AbstractMojo {
 	@Parameter(required = true)
 	private String mainClass;
 
-	@Parameter(required = true, defaultValue = "")
+	@Parameter(required = true, defaultValue = "", property = "rootpath")
 	private String rootPath;
 
 	@Parameter(required = true, readonly = true, defaultValue = "${project.build.outputDirectory}")
